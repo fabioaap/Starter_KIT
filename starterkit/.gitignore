@@ -1,0 +1,9 @@
+node_modules
+.next
+storybook-static
+packages/tokens/build
+apps/web/.next
+apps/web/out
+dist
+npm-debug.log*
+.DS_Store

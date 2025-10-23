@@ -1,0 +1,52 @@
+{
+  "name": "starterkit-monorepo",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Starter Kit para Next.js, Tailwind CSS, Storybook, shadcn/ui, MSW e Style Dictionary.",
+  "engines": {
+    "node": ">=20"
+  },
+  "workspaces": [
+    "apps/web",
+    "packages/ui",
+    "packages/tokens"
+  ],
+  "scripts": {
+    "dev": "npm --prefix apps/web run dev",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "build:tokens": "style-dictionary build --config packages/tokens/style-dictionary.config.cjs"
+  },
+  "dependencies": {
+    "@radix-ui/react-dialog": "^1.0.5",
+    "@radix-ui/react-slot": "^1.0.3",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.0",
+    "lucide-react": "^0.436.0",
+    "next": "^14.2.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwind-merge": "^2.3.0"
+  },
+  "devDependencies": {
+    "@storybook/addon-a11y": "^8.1.10",
+    "@storybook/addon-essentials": "^8.1.10",
+    "@storybook/builder-vite": "^8.1.10",
+    "@storybook/nextjs": "^8.1.10",
+    "@storybook/react": "^8.1.10",
+    "@storybook/test": "^8.1.10",
+    "@tokens-studio/sd-transforms": "^4.0.1",
+    "@types/node": "^20.14.9",
+    "@types/react": "^18.3.2",
+    "@types/react-dom": "^18.3.0",
+    "autoprefixer": "^10.4.19",
+    "msw": "^2.3.1",
+    "msw-storybook-addon": "^2.0.3",
+    "postcss": "^8.4.41",
+    "storybook": "^8.1.10",
+    "style-dictionary": "^4.0.3",
+    "tailwindcss": "^3.4.4",
+    "tailwindcss-animate": "^1.0.7",
+    "typescript": "^5.5.4"
+  }
+}
